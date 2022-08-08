@@ -12,14 +12,17 @@ import HookCounterList from './components/hooks/1.useState/HookCounterList';
 import HookInput from './components/hooks/1.useState/HookInput';
 
 import Clicktitle from './components/hooks/2.useEffect/Clicktitle';
-import { MouseEvent } from './components/hooks/2.useEffect/MouseEvent';
+import CountTimer from './components/hooks/2.useEffect/CountTimer';
+import FetchDataList from './components/hooks/2.useEffect/FetchDataList';
+import FetchDataId from './components/hooks/2.useEffect/FetchDataId';
+import FetchDataButton from './components/hooks/2.useEffect/FetchDataButton';
 
 
 function App() {
   return (
     <div className="App">
       <h1 className='app-title'>Learn React</h1>
-      <h1>Fundamentals</h1>
+      {/* <h1>Fundamentals</h1>
       <Greet firstName="Anya" lastName="Forger">
         <ClickHandler />
         <Parent />
@@ -38,6 +41,10 @@ function App() {
       <HookInput/>
       <br/>
       <Clicktitle />
+      <CountTimer/> */}
+      {/* <FetchDataList/> */}
+      {/* <FetchDataId/> */}
+      <FetchDataButton/>
     </div>
   );
 }
