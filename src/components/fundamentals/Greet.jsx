@@ -1,8 +1,8 @@
 
-const Greet = ({ name, lastName, children }) => {
+const Greet = ({ firstName, lastName, children }) => {
     return (
         <>
-            <div>Hello {name} {lastName} </div>
+            <div>Hello {firstName} {lastName} </div>
             {children}
         </>
     )

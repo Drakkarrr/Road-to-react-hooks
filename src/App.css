@@ -38,3 +38,8 @@
   padding: 1rem;
   margin-bottom: 5rem;
 }
+
+.item-container {
+  width: 20%;
+  margin: auto;
+}

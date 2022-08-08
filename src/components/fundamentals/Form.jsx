@@ -12,7 +12,7 @@ const Form = () => {
             <form onSubmit={handleSubmit}>
                 <h1>Forms</h1>
                 <label>Username</label>
-                <input type="text" value={userName} onChange={(event) => setuserName(event.target.value)} />
+                <input type="text" placeholder='Username' value={userName} onChange={(event) => setuserName(event.target.value)} />
                 <button type='submit'>Submit</button>
             </form>
         </>

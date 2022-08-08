@@ -1,10 +1,10 @@
 import React from 'react'
 
 const NameList = () => {
-    const names = ['Drakkar', 'Junrey', 'Heart']
+    const names = ['Drakkar', 'Junrey', 'Ondong']
     return (
         <>
-            <h1>List</h1>
+            <h1>List of names</h1>
             {names.map(name => <li key={name}>{name}</li>)}
         </>
     )
