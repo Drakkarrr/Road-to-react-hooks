@@ -6,9 +6,7 @@ const FetchDataButton = () => {
     const [id, setId] = useState(1)
     const [idFetch, setIdFetch] = useState(id)
 
-    const fetchHandler = () => {
-        setIdFetch(id)
-    }
+    const fetchHandler = () => setIdFetch(id)
 
     useEffect(() => {
         axios.get(`https://jsonplaceholder.typicode.com/posts/${idFetch}`)
@@ -20,11 +18,11 @@ const FetchDataButton = () => {
     }, [idFetch])
 
     return (
-        <div>
+        <>
             <input type="text" value={id} onChange={e => setId(e.target.value)} />
             <button onClick={fetchHandler}>Fetch post</button>
             <p>{post.title}</p>
-        </div>
+        </>
     )
 }
 
