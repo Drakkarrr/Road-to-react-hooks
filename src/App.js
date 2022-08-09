@@ -19,7 +19,10 @@ import React from "react";
 // import FetchDataId from './components/hooks/2.useEffect/FetchDataId';
 // import FetchDataButton from './components/hooks/2.useEffect/FetchDataButton';
 
-import ParentContext from './components/hooks/3.useContext/ParentContext';
+// import ParentContext from './components/hooks/3.useContext/ParentContext';
+
+// import CouterReducer from './components/hooks/4.useReducer/CouterReducer';
+import CouterReducerComplex from './components/hooks/4.useReducer/CouterReducerComplex';
 
 export const FirstNameContext = React.createContext();
 export const LastNameContext = React.createContext();
@@ -52,11 +55,14 @@ function App() {
       <FetchDataId/>
       <FetchDataButton/> */}
       
-      <FirstNameContext.Provider value={"Junrey"}>
+      {/* <FirstNameContext.Provider value={"Junrey"}>
         <LastNameContext.Provider value={"Lañas"}>
           <ParentContext/>
         </LastNameContext.Provider>
-      </FirstNameContext.Provider>
+      </FirstNameContext.Provider> */}
+
+      {/* <CouterReducer/> */}
+      <CouterReducerComplex/>
     </div>
   );
 }
