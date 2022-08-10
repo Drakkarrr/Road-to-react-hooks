@@ -22,7 +22,9 @@ import React from "react";
 // import ParentContext from './components/hooks/3.useContext/ParentContext';
 
 // import CouterReducer from './components/hooks/4.useReducer/CouterReducer';
-import CouterReducerComplex from './components/hooks/4.useReducer/CouterReducerComplex';
+// import CouterReducerComplex from './components/hooks/4.useReducer/CouterReducerComplex';
+
+import ParentComponent from './components/hooks/5.useCallback/ParentComponent';
 
 export const FirstNameContext = React.createContext();
 export const LastNameContext = React.createContext();
@@ -62,7 +64,9 @@ function App() {
       </FirstNameContext.Provider> */}
 
       {/* <CouterReducer/> */}
-      <CouterReducerComplex/>
+      {/* <CouterReducerComplex/> */}
+
+      <ParentComponent/>
     </div>
   );
 }
