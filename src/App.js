@@ -24,7 +24,13 @@ import React from "react";
 // import CouterReducer from './components/hooks/4.useReducer/CouterReducer';
 // import CouterReducerComplex from './components/hooks/4.useReducer/CouterReducerComplex';
 
-import ParentComponent from './components/hooks/5.useCallback/ParentComponent';
+// import ParentComponent from './components/hooks/5.useCallback/ParentComponent';
+
+// import Counter from './components/hooks/6.useMemo/Counter';
+
+import FocusInput from './components/hooks/7.useRef/FocusInput';
+import Timer from './components/hooks/7.useRef/Timer';
+
 
 export const FirstNameContext = React.createContext();
 export const LastNameContext = React.createContext();
@@ -62,11 +68,14 @@ function App() {
           <ParentContext/>
         </LastNameContext.Provider>
       </FirstNameContext.Provider> */}
-
+      
       {/* <CouterReducer/> */}
       {/* <CouterReducerComplex/> */}
+      {/* <ParentComponent/> */}
+      {/* <Counter/> */}
 
-      <ParentComponent/>
+      {/* <FocusInput/> */}
+      <Timer/>
     </div>
   );
 }
