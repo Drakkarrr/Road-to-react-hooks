@@ -31,7 +31,8 @@ import React from "react";
 // import FocusInput from './components/hooks/7.useRef/FocusInput';
 // import Timer from './components/hooks/7.useRef/Timer';
 
-import ComponentParent from './components/hooks/8.customHooks/ComponentParent';
+// import ComponentParent from './components/hooks/8.customHooks/components/ComponentParent';
+import CounterParent from './components/hooks/8.customHooks/components/CounterParent';
 
 
 export const FirstNameContext = React.createContext();
@@ -79,7 +80,8 @@ function App() {
       <FocusInput/> 
       <Timer/> */}
 
-      <ComponentParent/>
+      {/* <ComponentParent/> */}
+      <CounterParent/>
     </div>
   );
 }

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import useDocumentTitle from './useDocumentTitle'
+import useDocumentTitle from './../useDocumentTitle'
 
-const ComponentOne = () => {
+
+const ComponentTwo = () => {
     const [count, setCount] = useState(0)
     useDocumentTitle(count)
 
@@ -10,4 +11,4 @@ const ComponentOne = () => {
     )
 }
 
-export default ComponentOne
+export default ComponentTwo
