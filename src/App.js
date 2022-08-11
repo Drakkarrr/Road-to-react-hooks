@@ -28,8 +28,10 @@ import React from "react";
 
 // import Counter from './components/hooks/6.useMemo/Counter';
 
-import FocusInput from './components/hooks/7.useRef/FocusInput';
-import Timer from './components/hooks/7.useRef/Timer';
+// import FocusInput from './components/hooks/7.useRef/FocusInput';
+// import Timer from './components/hooks/7.useRef/Timer';
+
+import ComponentParent from './components/hooks/8.customHooks/ComponentParent';
 
 
 export const FirstNameContext = React.createContext();
@@ -61,21 +63,23 @@ function App() {
       <CountTimer/> 
       <FetchDataList/>
       <FetchDataId/>
-      <FetchDataButton/> */}
+      <FetchDataButton/> 
       
-      {/* <FirstNameContext.Provider value={"Junrey"}>
+      <FirstNameContext.Provider value={"Junrey"}>
         <LastNameContext.Provider value={"Lañas"}>
           <ParentContext/>
         </LastNameContext.Provider>
-      </FirstNameContext.Provider> */}
+      </FirstNameContext.Provider>
       
-      {/* <CouterReducer/> */}
-      {/* <CouterReducerComplex/> */}
-      {/* <ParentComponent/> */}
-      {/* <Counter/> */}
+      <CouterReducer/> 
+      <CouterReducerComplex/>
+      <ParentComponent/>
+      <Counter/> 
 
-      {/* <FocusInput/> */}
-      <Timer/>
+      <FocusInput/> 
+      <Timer/> */}
+
+      <ComponentParent/>
     </div>
   );
 }
